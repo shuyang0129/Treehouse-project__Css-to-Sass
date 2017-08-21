@@ -1,0 +1,22 @@
+/*============================
+Contain Layout
+============================*/
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	@media (min-width: 768px) {
+		& {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+	}
+}
