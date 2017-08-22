@@ -1,15 +1,14 @@
 /*============================
-Contain Layout
+Container
 ============================*/
 
 .wrapper {
 	max-width: 1024px;
-	margin: 0 auto;
+	@extend %center;
 }
 
 .container {
-	max-width: 1024px;
-	margin: 0 auto;
+	@extend .wrapper;
 	padding-left: 16px;
 	padding-right: 16px;
 
