@@ -5,3 +5,25 @@
 header {
 	@extend %content-block_grey;
 }
+
+/**** Introduction ****/
+
+.profile-pic {
+	width: 200px;
+	margin: 0 0 28px;
+
+	@media (min-width: 768px) {
+		& {
+			width: 45%;
+			float: right;
+			margin-left: 30px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.intro {
+		text-align: left;
+	}
+}
