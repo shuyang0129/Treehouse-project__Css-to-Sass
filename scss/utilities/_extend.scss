@@ -2,7 +2,7 @@
 // POSITION
 ////////////////////////////////////////////////////
 
-//-------Center-------//
+/*-------Layout center-------*/
 %center {
 	margin: 0 auto;
 }
@@ -11,7 +11,7 @@
 // TYPOGRAPHY
 ////////////////////////////////////////////////////
 
-//-------Text center-------//
+/*-------Text center-------*/
 %text-center {
 	text-align: center;
 }
@@ -22,10 +22,7 @@
 // CONTENT BLOCK
 ////////////////////////////////////////////////////
 
-/*============================
-Content block
-============================*/
-
+/*-------Content block-------*/
 %content-block_grey {
 	background: $background-color_default;
 	@extend %text-center;
