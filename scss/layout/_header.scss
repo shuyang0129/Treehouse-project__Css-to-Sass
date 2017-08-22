@@ -1,10 +1,7 @@
-/*============================
-HEADER
-============================*/
+////////////////////////////////////////////////////
+// HEADER
+////////////////////////////////////////////////////
 
 header {
-	background: $background-color_default;
-	text-align: center;
-	padding-top: 24px;
-	padding-bottom: 43px;
+	@extend %content-block_grey;
 }

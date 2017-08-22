@@ -16,3 +16,19 @@
 	text-align: center;
 }
 
+
+
+////////////////////////////////////////////////////
+// CONTENT BLOCK
+////////////////////////////////////////////////////
+
+/*============================
+Content block
+============================*/
+
+%content-block_grey {
+	background: $background-color_default;
+	@extend %text-center;
+	padding-top: 24px;
+	padding-bottom: 43px;
+}
