@@ -6,8 +6,9 @@ header {
 	@extend %content-block_grey;
 }
 
-/**** Introduction ****/
+/*-------Introduction-------*/
 
+/*Profile picture*/
 .profile-pic {
 	width: 200px;
 	margin: 0 0 28px;
@@ -21,9 +22,11 @@ header {
 	}
 }
 
-@media (min-width: 768px) {
-	
-	.intro {
-		text-align: left;
+/*Introduction text*/
+.intro {
+	@media (min-width: 768px) {
+		& {
+			text-align: left;
+		}
 	}
 }
