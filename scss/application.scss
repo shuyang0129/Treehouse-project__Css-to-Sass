@@ -1,34 +1,17 @@
 @import 'utilities/config';
 @import 'utilities/helper';
 @import 'utilities/extend';
+@import 'utilities/mixin';
 
 @import 'base/base';
 @import 'base/typography';
 
 @import 'layout/header';
 @import 'layout/nav';
-@import 'layout/profile';
+@import 'layout/main';
 @import 'layout/footer';
 @import 'layout/container';
 
-
-
-
-/*============================
-Media Query
-============================*/
-
-@media (min-width: 768px) {
-	
-	.bottom-nav {
-		display: inline-block;
-		float: right;
-		margin-top: 19px;
-	}
-	#back-to-top {
-		display: none;
-	}
-}
 
 
 
