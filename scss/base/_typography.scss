@@ -28,7 +28,7 @@ nav a {
 
 .section__title {
 	width: 100%;
-	text-align: center;
+	@extend %text-center;
 	font-size: 1.4em;
 	color: #4A4A4A;
 	font-weight: 700; /* Bold */
@@ -50,19 +50,15 @@ nav a {
 // FOOTER
 ////////////////////////////////////////////////////
 
-.personal-info {
+.contact-info__item {
 	@extend p;
 }
 
-.bottom-caption h2 {
-	text-align: center;
+.bottom__title {
+	@extend %text-center;
 	font-size: 1.2em;
 	color: #4A4A4A;
 	font-weight: 500; /* Medium */
-}
-
-.bottom-caption a:visited {
-	color: #4A4A4A;
 }
 
 
