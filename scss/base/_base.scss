@@ -17,8 +17,8 @@ img {
 
 p{
 	@extend %font-color_default;
+	@extend %font-weight_light;
 	font-size: 1.4em;
-	font-weight: 300; /* Light */
 	line-height: 1.6;
 	margin: 0;
 }
@@ -28,5 +28,5 @@ a:visited {
 }
 
 b {
-	font-weight: 500;
+	@extend %font-weight_medium;
 }
