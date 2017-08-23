@@ -8,7 +8,6 @@ Base Element
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 0.625em;
 }
 
 img {
@@ -18,7 +17,7 @@ img {
 p{
 	@extend %font-color_default;
 	@extend %font-weight_light;
-	font-size: 1.4em;
+	font-size: rem(14px);
 	line-height: 1.6;
 	margin: 0;
 }
