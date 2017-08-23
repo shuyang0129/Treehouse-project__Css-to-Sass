@@ -1,19 +1,7 @@
-@import 'utilities/config';
-@import 'utilities/helper';
-@import 'utilities/function';
-@import 'utilities/extend';
-@import 'utilities/mixin';
-
-@import 'module/flex-box';
-
-@import 'base/base';
-@import 'base/typography';
-
-@import 'layout/header';
-@import 'layout/nav';
-@import 'layout/main';
-@import 'layout/footer';
-@import 'layout/container';
+@import 'utilities/index';
+@import 'module/index';
+@import 'base/index';
+@import 'layout/index';
 
 
 
