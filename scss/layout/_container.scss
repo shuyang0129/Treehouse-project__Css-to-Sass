@@ -31,10 +31,10 @@ GRID LAYOUT
 	@include justify-content(space-around);
 	.portfolio__project {
 		width: column(1);;
-		@media (min-width: 768px) {
+		@include breakpoint(windows_s) {
 			width: column(2, $gutter:10%);
 		}
-		@media (min-width: 1024px) {
+		@include breakpoint(windows_m) {
 			width: column(3, $gutter:10%);
 		}
 	}

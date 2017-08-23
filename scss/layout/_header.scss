@@ -11,22 +11,18 @@ header {
 /*Profile picture*/
 .profile-pic {
 	width: 200px;
-	margin: 0 0 28px;
+	margin-bottom: 28px;
 
-	@media (min-width: 768px) {
-		& {
-			width: 45%;
-			float: right;
-			margin-left: 30px;
-		}
+	@include breakpoint(windows_s) {
+		width: 45%;
+		float: right;
+		margin-left: 30px;
 	}
 }
 
 /*Introduction text*/
 .intro {
-	@media (min-width: 768px) {
-		& {
-			text-align: left;
-		}
+	@include breakpoint(windows_s) {
+		text-align: left;
 	}
 }

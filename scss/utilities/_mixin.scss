@@ -10,3 +10,16 @@
       }
       #{$property}: #{$value};
 }
+
+
+
+////////////////////////////////////////////////////
+// BREAKPOINTS
+////////////////////////////////////////////////////
+
+@mixin breakpoint($point) {
+	@if not index((windows_s, windows_m), $point) {
+	    @warn "Input value should be 'windows_s', 'windows_m'.";
+	}
+    @media (min-width: map-get($breakpoint, $point)) { @content; }
+}
