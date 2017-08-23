@@ -1,0 +1,12 @@
+////////////////////////////////////////////////////
+// COLUMN DIVIDE
+////////////////////////////////////////////////////
+
+@function column($column, $gutter: null) {
+	@if $column == 1 {
+		@return 100%;
+	}
+	@else {
+		@return (100% - $gutter) / $column;
+	}
+}
