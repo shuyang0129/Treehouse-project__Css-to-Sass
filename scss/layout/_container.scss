@@ -3,18 +3,18 @@ CONTAINER
 ============================*/
 
 .wrapper {
-	max-width: 1024px;
+	max-width    : 1024px;
 	@extend %center;
 }
 
 .container {
 	@extend .wrapper;
-	padding-left: 16px;
+	padding-left : 16px;
 	padding-right: 16px;
 
 	@media (min-width: 768px) {
 			padding-right: 30px;
-			padding-left: 30px;
+			padding-left : 30px;
 	}
 }
 
@@ -30,7 +30,7 @@ GRID LAYOUT
 	@include align-content(flex-start);
 	@include justify-content(space-around);
 	.portfolio__project {
-		width: column(1);;
+		width    : column(1);;
 		@include breakpoint(windows_s) {
 			width: column(2, $gutter:10%);
 		}

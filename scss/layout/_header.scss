@@ -1,28 +1,25 @@
-////////////////////////////////////////////////////
-// HEADER
-////////////////////////////////////////////////////
+/*============================
+HEADER
+============================*/
 
 header {
 	@extend %content-block_grey;
 }
 
-/*-------Introduction-------*/
-
-/*Profile picture*/
+/*--Profile picture--*/
 .profile-pic {
-	width: 200px;
+	width        : 200px;
 	margin-bottom: 28px;
-
 	@include breakpoint(windows_s) {
-		width: 45%;
-		float: right;
+		width      : 45%;
+		float      : right;
 		margin-left: 30px;
 	}
 }
 
-/*Introduction text*/
+/*--Introduction--*/
 .intro {
 	@include breakpoint(windows_s) {
-		text-align: left;
+		text-align : left;
 	}
 }

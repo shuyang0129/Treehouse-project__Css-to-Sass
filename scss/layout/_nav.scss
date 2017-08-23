@@ -8,12 +8,12 @@ nav {
 }
 
 nav li {
-	background: #fff;
-	margin-top: 5px;
-	padding: 15px 0;
+	background   : $nav__button_default;
+	margin-top   : 5px;
+	padding      : 15px 0;
 	@include breakpoint(windows_s) {
-		display: inline-block;
-		margin: 0 20px;
+		display         : inline-block;
+		margin          : 0 20px;
 		background-color: transparent;
 	}
 }

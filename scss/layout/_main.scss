@@ -3,16 +3,16 @@ PORTFOLIO
 ============================*/
 
 .portfolio__project {
-	text-align: center;
+	@extend %text-center;
 	padding-bottom: 32px;
 }
 
 .project__img {
-	margin-bottom: 32px;
+	margin-bottom : 32px;
 }
 
 .project__title {
-	margin-top: 0;
-	margin-bottom: 16px;
+	margin-top    : 0;
+	margin-bottom : 16px;
 }
 
