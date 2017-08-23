@@ -1,50 +1,44 @@
-////////////////////////////////////////////////////
-// FOOTER
-////////////////////////////////////////////////////
+/*============================
+FOOTER
+============================*/
 
 footer {
 	@extend %content-block_grey;
 }
 
-.personal-info {
-	margin: 40px 0;
+/*--Contact information--*/
+.contact-info {
+	margin       : 40px 0;
 }
 
-.personal-info li {
-	margin-bottom: 22px;
+.contact-info__item + .contact-info__item {
+	margin-top   : 22px;
 }
 
-.bottom-caption {
-	margin-top: 62px;
-	border-top: 1px solid #ECECEC;
+/*--Bottom area of footer--*/
+.footer__bottom {
+	@extend %disp_flex;
+	@include justify-content(space-between);
+	margin-top   : 62px;
+	padding-top  : 24px;
+	border-top   : 1px solid #ECECEC;
 }
 
-.bottom-caption h2 {
-	display: block;
-	margin-top: 34px;
-	margin-bottom: 0;
-}
-
-.footer-left {
-	float: left;
-}
-
-.footer-right {
-	float: right;
-}
-
-.bottom-nav {
-	display: none;
-}
-
-@media (min-width: 768px) {
-	
-	.bottom-nav {
-		display: inline-block;
-		float: right;
-		margin-top: 19px;
-	}
-	#back-to-top {
-		display: none;
+//Button | back to top
+.bottom__button {
+	@extend .bottom__title;
+	@include breakpoint(windows_s) {
+		display  : none;
 	}
 }
+
+.bottom__nav {
+	display      : none;
+	margin-top   : 19px;
+	@include breakpoint(windows_s) {
+		display  : inline-block;
+		
+	}
+}
+
+
