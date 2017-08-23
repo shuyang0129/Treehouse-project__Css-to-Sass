@@ -17,6 +17,6 @@
 // PIXEL TO REM
 ////////////////////////////////////////////////////
 
-@function rem($pixel, $rem-basic: 16) {
+@function rem($pixel, $rem-basic: 16px) {
 	@return ($pixel / $rem-basic) * 1rem;
 }
