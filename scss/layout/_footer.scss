@@ -21,7 +21,7 @@ footer {
 	@include justify-content(space-between);
 	margin-top   : 62px;
 	padding-top  : 24px;
-	border-top   : 1px solid #ECECEC;
+	border-top   : 1px solid $divider_color_default;
 }
 
 //Button | back to top

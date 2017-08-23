@@ -3,9 +3,9 @@
 ////////////////////////////////////////////////////
 
 #title {
+	@extend %font-color_primary;
+	@extend %font-weight_bold;
 	font-size: 2.6em;
-	color: #4A4A4A;
-	font-weight: 700; /* Bold */
 	margin-top: 0;
 	margin-bottom: 24px;
 }
@@ -15,9 +15,9 @@
 ////////////////////////////////////////////////////
 
 nav a {
+	@extend %font-color_primary;
+	@extend %font-weight_medium;
 	font-size: 1.2em;
-	color: #4A4A4A;
-	font-weight: 500; /* Medium */
 }
 
 
@@ -27,17 +27,17 @@ nav a {
 ////////////////////////////////////////////////////
 
 .section__title {
-	width: 100%;
 	@extend %text-center;
+	@extend %font-color_primary;
+	@extend %font-weight_bold;
+	width: 100%;
 	font-size: 1.4em;
-	color: #4A4A4A;
-	font-weight: 700; /* Bold */
 	padding: 50px 0;
 }
 
 .project__title {
+	@extend %font-weight_regular;
 	font-size: 1.8em;
-	font-weight: 400; /* Regular */
 }
 
 .project__description {
@@ -56,9 +56,9 @@ nav a {
 
 .bottom__title {
 	@extend %text-center;
+	@extend %font-color_primary;
+	@extend %font-weight_medium;
 	font-size: 1.2em;
-	color: #4A4A4A;
-	font-weight: 500; /* Medium */
 }
 
 

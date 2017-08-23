@@ -1,31 +1,53 @@
-////////////////////////////////////////////////////
-// POSITION
-////////////////////////////////////////////////////
-
-/*-------Layout center-------*/
+/*============================
+LAYOUT CENTER
+============================*/
 %center {
 	margin: 0 auto;
 }
 
-////////////////////////////////////////////////////
-// TYPOGRAPHY
-////////////////////////////////////////////////////
-
-/*-------Text center-------*/
+/*============================
+TEXT CENTER
+============================*/
 %text-center {
 	text-align: center;
 }
 
 
 
-////////////////////////////////////////////////////
-// CONTENT BLOCK
-////////////////////////////////////////////////////
-
-/*-------Content block-------*/
+/*============================
+CONTENT BLOCK
+============================*/
 %content-block_grey {
 	background: $background-color_default;
 	@extend %text-center;
 	padding-top: 24px;
 	padding-bottom: 43px;
 }
+
+
+
+/*============================
+FONT COLOR
+============================*/
+
+%font-color_primary {
+	color: $font-color_primary;
+}
+
+%font-color_default {
+	color: $font-color_default;
+}
+
+
+
+/*============================
+FONT WEIGHT
+============================*/
+
+@each $type, $weight in $font-weight {
+	%font-weight_#{$type} {
+		font-weight: $weight;
+	}
+}
+
+
