@@ -1,5 +1,5 @@
 /*============================
-Container
+CONTAINER
 ============================*/
 
 .wrapper {
@@ -13,9 +13,29 @@ Container
 	padding-right: 16px;
 
 	@media (min-width: 768px) {
-		& {
 			padding-right: 30px;
 			padding-left: 30px;
+	}
+}
+
+
+
+/*============================
+GRID LAYOUT
+============================*/
+
+.grid {
+	@extend %disp_flex;
+	@include flex-flow(row, wrap);
+	@include align-content(flex-start);
+	@include justify-content(space-around);
+	.portfolio__project {
+		width: column(1);;
+		@media (min-width: 768px) {
+			width: column(2, $gutter:10%);
+		}
+		@media (min-width: 1024px) {
+			width: column(3, $gutter:10%);
 		}
 	}
 }
